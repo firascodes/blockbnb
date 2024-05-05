@@ -12,6 +12,7 @@ import {
   getDefaultWallets,
   RainbowKitProvider,
   darkTheme,
+  lightTheme,
 } from '@rainbow-me/rainbowkit'
 
 import { infuraProvider } from 'wagmi/providers/infura'
@@ -44,7 +45,7 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <Provider>
       <WagmiConfig client={wagmiClient}>
-        <RainbowKitProvider chains={chains} theme={darkTheme()} coolMode>
+        <RainbowKitProvider chains={chains} theme={lightTheme()} coolMode>
           <Component {...pageProps} />
         </RainbowKitProvider>
       </WagmiConfig>

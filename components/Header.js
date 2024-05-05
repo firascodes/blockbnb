@@ -43,16 +43,7 @@ const Header = ({
       </div>
 
       <div className='flex items-center justify-end'>
-        <div className='border border-transparent cursor-pointer hover:bg-gray-100 rounded-full px-3 py-2'>
-          <a
-            className='text-sm font-medium transition-all duration-300 text-gray-800'
-            href='#'
-          >
-            Become a Host
-          </a>
-        </div>
-
-        <div className='border border-transparent cursor-pointer hover:bg-gray-100 rounded-full p-3'>
+        <div className='border border-transparent cursor-pointer hover:bg-gray-100 rounded-full p-3 mr-2'>
           <GlobeAmericasIcon className='h-5 w-5 transition-all duration-300 text-[#356fff]' />
         </div>
         <ConnectButton />

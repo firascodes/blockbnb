@@ -19,6 +19,7 @@ const Listings = ({ setShowReserveListingModal }) => {
         {properties.length === 0 && (
           <div className='text-center'>
             <h1 className='text-2xl font-bold'>No Listings Found</h1>
+            <h2 className='text-lg font-semibold'>Please connect wallet</h2>
           </div>
         )}
       </div>

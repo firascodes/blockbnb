@@ -11,7 +11,7 @@ const ListingItem = ({ item, setShowReserveListingModal }) => {
   const [priceInEth] = useState(Web3.utils.fromWei(item.pricePerDay))
 
   const { setSelectedPropertyId } = useAppContext()
-  const { address } = useBlockbnb()
+  const { userAddress } = useBlockbnb()
 
   return (
     <div
@@ -34,7 +34,7 @@ const ListingItem = ({ item, setShowReserveListingModal }) => {
           </div>
         </div>
 
-        {address && (
+        {userAddress && (
           <div className=' transition-all duration-150 absolute top-4 right-4 flex space-x-2'>
             <HeartIcon
               className={`w-6 h-6 text-white  ${
@@ -58,12 +58,12 @@ const ListingItem = ({ item, setShowReserveListingModal }) => {
         <p className='text-sm font-light text-gray-600'>{item.address}</p>
 
         {item.isBooked ? (
-          <div>Property Unavailable</div>
+          <div className='text-red-600'>Property Unavailable</div>
         ) : (
           <>
             <p className='text-sm font-light text-gray-800 mt-2'>
               <span className='text-base font-medium'>
-                ETH {priceInEth.toLocaleString('en-US')}
+                ETH {priceInEth.toLocaleString('en-US')} (${priceInEth.toLocaleString('en-US') * 3000})
               </span>
               &nbsp;night
             </p>

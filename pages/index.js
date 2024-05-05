@@ -31,7 +31,7 @@ export default function Home() {
           <div className='px-20 pb-10 flex justify-end space-x-4'>
             <button
               onClick={() => setShowNewListingModal(true)}
-              className='border rounded-lg p-4 text-xs font-medium'
+              className='border rounded-lg p-4 text-xs font-medium bg-[#356eff] text-white'
             >
               Add Listing
             </button>
