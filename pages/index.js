@@ -18,6 +18,8 @@ export default function Home() {
   return (
     <div>
       <Head>
+        {/* add favicon */}
+        <link rel='icon' href='/favicon.svg' />
         <title>Blockbnb</title>
       </Head>
 
