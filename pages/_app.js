@@ -11,7 +11,6 @@ import { publicProvider } from 'wagmi/providers/public';
 import {
   getDefaultWallets,
   RainbowKitProvider,
-  darkTheme,
   lightTheme,
 } from '@rainbow-me/rainbowkit'
 
@@ -21,8 +20,8 @@ import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 
 const { chains, provider, webSocketProvider } = configureChains(
   [
-    polygon,
-    sepolia
+    sepolia,
+    polygon
   ],
   [
     alchemyProvider({ apiKey: process.env.ALCHEMY_API_KEY }),
